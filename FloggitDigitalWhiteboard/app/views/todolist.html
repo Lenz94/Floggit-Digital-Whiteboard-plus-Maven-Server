@@ -1,0 +1,52 @@
+<div class="container">
+  <h4 class="textboard">Welcome to our Digital Whitebord!. Feel free to add your sticky notes!</h4>
+
+  <form role="form" ng-submit="add(todo.name, todo.textarea, todo.color)">
+    <div class="row">
+      <div class="input-group">
+        <input type="text" ng-model="todo.name" placeholder="Name?" class="form-control" id="todoText">
+        <input type="text" ng-model="todo.textarea" placeholder="Textarea?" class="form-control" id="textfiled">
+        <select ng-model="todo.color" id="myColor" ng-style="{'background-color':todo.color}">
+            <option value="">Colors</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Purple">Purple</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Pink">Pink</option>
+        </select>
+        <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary" value="Add Note">
+        </span>
+      </div>
+    </div>
+  </form>
+
+  <p></p>
+
+</div>
+
+<div ui-sortable  ng-model="todo"  class"todost">
+  <ul class="input-group2"  ng-repeat="todo in todos" ng-style="{'background-color':todo.color}">
+    <li class="stickycontainer">
+      <div>
+        <input type="text" ng-model="todo.name" class="form-control" id="formname">
+
+        <textarea class="textarea" rows="4" cols="25" ng-model="todo.textarea" id="formtextarea"></textarea>
+        
+        <span class="glyphicon glyphicon-refresh" ng-click ="update(todo)"></span>
+        <span class="glyphicon glyphicon-remove" ng-click ="delete(todo)"></span>
+
+        <select ng-model="todo.color" id="formcolor">
+          <option value="">Colors</option>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Purple">Purple</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Pink">Pink</option>
+        </select>
+        <br/>
+      </div>
+    </li>    
+  </ul>
+</div>
+ 

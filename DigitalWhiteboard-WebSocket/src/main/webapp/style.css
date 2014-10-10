@@ -1,0 +1,37 @@
+@CHARSET "US-ASCII";
+
+body {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  background: url('images/wallpaper.jpg') 
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  backgroundi-size: cover;
+}
+
+h1,
+h2,
+form {
+	background-color: transparent;
+	border: none; 
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	outline: none;
+}
+
+#result {
+	background-color: transparent;
+	border: none; 
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	outline: none;
+	font-size: 30px;
+}
+
+fieldset { 
+	border:1px solid red;
+ }
