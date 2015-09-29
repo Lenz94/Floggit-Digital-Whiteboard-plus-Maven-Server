@@ -1,6 +1,6 @@
 # Websocket-for-Floggit-Digital-Whiteboard
 
-![alt tag](https://raw.github.com/Lenz94/Websocket-for-Floggit-Digital-Whiteboard/master/screenshots/websocket_screenshotjpg.jpg)
+![alt tag](https://raw.github.com/Lenz94/Websocket-for-Floggit-Digital-Whiteboard/master/screenshots/websocket_screenshot.jpg)
 
 Here you can create/update & delete cool and colorful sticky notes with lots of content.
 
